@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PortfolioItem from './PortfolioItem'; 
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   const portfolioData = [
@@ -26,7 +27,9 @@ const Portfolio = () => {
         </p>
       </div>
       <PortfolioItem data={portfolioData} />
-      <button id="click-button">Click this please</button>
+      <Link to="/links">
+        <button id="click-button">Check out my links</button>
+      </Link>
     </div>
   );
 };
